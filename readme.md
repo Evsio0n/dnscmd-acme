@@ -7,6 +7,10 @@
 
 1. Build `acme.exe` and run it on your dns server or change source code to control Active Directory server accrodingly.
 
+```bash
+GOOS=windows GOARCH=amd64 go build -o acme.exe
+```
+
 2. Copy dns_win.sh to your acme.sh `dns_api` directory.
 
 3. Try `acme.sh` with `--dns dns_win` to obtain certificate.
